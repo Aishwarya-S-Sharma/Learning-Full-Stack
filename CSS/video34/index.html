@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Float and Clear</title>
+    <style>
+      .cards {
+        border: 2px solid black;
+        display: flow-root;
+      }
+      img {
+        float: left;
+      }
+      .card {
+        border: 2px solid red;
+      }
+
+      .card:nth-child(3){
+        background-color: aqua;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <img
+        src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+        alt=""
+        width="230"
+      />
+      <div class="card">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores animi
+        dolorum ab libero, nobis a, nostrum molestias culpa in nulla nisi
+        asperiores. 
+      </div>
+      <div class="card">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt unde
+        labore dolorum praesentium quaerat deserunt fugiat eligendi, voluptas
+        totam, ipsa aut ea sapiente voluptatibus illo rem impedit earum
+        consequuntur doloribus reprehenderit porro iusto a. Reprehenderit
+        quibusdam ratione optio, voluptas magnam dolorum alias possimus neque
+        aut. Ab quo corrupti similique unde, aliquid ratione voluptatem suscipit
+        sint ex aut accusantium vel. Qui, labore! Saepe at debitis modi quo
+        repellat veniam, vitae accusantium est blanditiis earum autem molestias
+        quidem suscipit deleniti nostrum consequuntur amet voluptatum libero
+        quibusdam ullam minima, sapiente dolor ex consectetur? Tempore quia
+        magni amet repellendus aliquam, veritatis impedit molestias rem! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+        necessitatibus eaque. Voluptate repellendus adipisci ipsa nam non neque
+        facere temporibus! Aut amet quis ea voluptate totam. Ea ad enim dolore
+        rerum cumque dolorum at eos a magnam, voluptatum distinctio officia
+        numquam earum ipsam temporibus aspernatur quas veniam quis repellat
+        accusamus nihil nesciunt facilis natus ducimus? Aspernatur ducimus sed,
+        recusandae omnis consequuntur nulla? Impedit, doloremque quas. Ab quos
+        possimus iste officia vero et ratione, consequatur distinctio accusamus
+        quis dolore non optio unde autem, nobis sint quas cum! Doloremque,
+        necessitatibus inventore ea iusto cum beatae consectetur ab ipsam
+        sapiente enim ipsa repudiandae.
+      </div>
+      <div class="card">Card 3</div>
+    </div>
+  </body>
+</html>

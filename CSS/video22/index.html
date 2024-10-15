@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Sizing units</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 2048px; */
+        width: 80vw;
+        height: 10vh;
+        margin: auto;
+        background-color: aqua;
+      }
+
+      .container {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 2048px; */
+        width: 80vw;
+        /* height: 80vh; */
+        min-height: 80vh;
+        margin: 23px auto;
+        background-color: aqua;
+        /* font-size: 12px; */
+      }
+
+      .container >div {
+        font-size: 3rem;
+        width: 50%;
+        border: 2px solid red;
+      }
+      .container >div >div{
+        font-size: 3rem;
+        width: 50%;
+        border: 2px solid blue;
+      }
+
+      .mycont {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 2048px; */
+        /* width: 100vmin; */
+        width: 80vw;
+        /* height: 80vh; */
+        margin: 23px auto;
+
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box</div>
+
+    <div class="container">
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, autem
+        officiis ab quo alias rem sunt tenetur? Voluptatibus possimus quod
+        doloremque exercitationem iste architecto quidem doloribus dolorem nulla
+        sequi cumque et quae
+      
+      <div>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+          fuga veniam inventore et cumque odit temporibus beatae aut repellendus
+          quidem animi repudiandae, facilis illum est aspernatur dolore iste
+          nemo minus quam. Ullam nostrum natus in iste iure molestias impedit?
+          Tempore nam repellendus quae dolore illum. Amet officiis nostrum
+          cupiditate sapiente omnis obcaecati voluptatibus nesciunt illum
+          voluptatum.
+      </div></div>
+    </div>
+    <!-- <br /><br /><br /><br /><br />
+    <p>
+      px->pixel <br />
+      vw->view port width <br />
+      vh->view port height <br />
+      em->
+    </p> -->
+    <div class="mycont">i am another container</div>
+  </body>
+</html>

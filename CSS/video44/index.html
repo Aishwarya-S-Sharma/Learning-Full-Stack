@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID Exercise</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            margin: 50px 0 50px 70px;
+        }
+        .container{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            row-gap: 20px;
+            column-gap: 20px;
+            grid-template-columns: repeat(3,300px);
+        }
+        .item{
+            padding: 10px;
+            background-color: #eee;
+            border-radius: 5px;
+            height: 150px;
+            width: 300px;
+            
+        }
+        .heading{
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            padding: 20px;
+            margin-bottom: 30px; 
+        }
+        .d1{
+background-color: rgb(28,246,246);
+transition: 0.2s all ease-out;
+        }
+        .d2{
+background-color: rgb(41,219,118);
+transition: 0.2s all ease-out;
+        }
+        .d1:hover{
+background-color: rgb(116, 203, 203);
+transition: 0.2s all ease-in;
+        }
+        .d2:hover{
+background-color: seagreen;
+transition: 0.2s all ease-in;
+        }
+        a{
+            padding: 9px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+        .link{
+            gap: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        button{
+            border-radius: 9px;
+            margin-right: 10px;
+            margin-left: 10px;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width:945px) {
+            .container{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            row-gap: 20px;
+            column-gap: 20px;
+            grid-template-columns: 1fr;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+    <div class="container">
+        <div class="item"><div class="heading">English</div><span>&nbsp;</span><button class="d1"><a href="ue_english.exe" class="link">Download 32-bit</a></button><button class="d2" class="d2"><a href="ue_english.exe" class="link">Download 64-bit</a></button></div>
+        <div class="item"><div class="heading">Hindi</div><span>&nbsp;</span><button class="d1"><a href="ue_english.exe" class="link">Download 32-bit</a></button><button class="d2"><a href="ue_english.exe" class="link">Download 64-bit</a></button></div>
+        <div class="item"><div class="heading">Korean</div><span>&nbsp;</span><button class="d1"><a href="ue_english.exe" class="link">Download 32-bit</a></button><button class="d2"><a href="ue_english.exe" class="link">Download 64-bit</a></button></div>
+        <div class="item"><div class="heading">Chinese</div><span>&nbsp;</span><button class="d1"><a href="ue_english.exe" class="link">Download 32-bit</a></button><button class="d2"><a href="ue_english.exe" class="link">Download 64-bit</a></button></div>
+        <div class="item"><div class="heading">Malayalam</div><span>&nbsp;</span><button class="d1"><a href="ue_english.exe" class="link">Download 32-bit</a></button><button class="d2"><a href="ue_english.exe" class="link">Download 64-bit</a></button></div>
+        <div class="item"><div class="heading">Kannada</div><span>&nbsp;</span><button class="d1"><a href="ue_english.exe" class="link">Download 32-bit</a></button><button class="d2"><a href="ue_english.exe" class="link">Download 64-bit</a></button></div>
+        <div class="item"><div class="heading">Telugu</div><span>&nbsp;</span><button class="d1"><a href="ue_english.exe" class="link">Download 32-bit</a></button><button class="d2"><a href="ue_english.exe" class="link">Download 64-bit</a></button></div>
+        <div class="item"><div class="heading">Sanskrit</div><span>&nbsp;</span><button class="d1"><a href="ue_english.exe" class="link">Download 32-bit</a></button><button class="d2"><a href="ue_english.exe" class="link">Download 64-bit</a></button></div>
+        <div class="item"><div class="heading">Japanes</div><span>&nbsp;</span><button class="d1"><a href="ue_english.exe" class="link">Download 32-bit</a></button><button class="d2"><a href="ue_english.exe" class="link">Download 64-bit</a></button></div>
+        <div class="item"><div class="heading">Portugal</div><span>&nbsp;</span><button class="d1"><a href="ue_english.exe" class="link">Download 32-bit</a></button><button class="d2"><a href="ue_english.exe" class="link">Download 64-bit</a></button></div>
+    </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:rgb(68, 68, 176);
+            --text-color:#fff;
+            --secondary-color:rgb(162, 162, 235);
+        }
+        *{
+            padding: 0;margin: 0;
+        }
+        body{
+            background-color: var(--secondary-color);
+        }
+        ul li{
+            list-style:none;
+            display: inline;
+            padding: 25px;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+        header{
+            top: 0;
+            position: sticky;
+        }
+        nav{
+            background-color: var(--primary-color);
+            padding: 12x 0;
+            
+        }
+        ul li a{
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .boxes{
+            display: flex;
+            /* padding: 25px; */
+            /* margin: 25px; */
+        }
+
+        .box{
+            height: 500px;
+            width: 500px;
+            background-color: #fff;
+            margin: 70px;
+            padding: 50px;
+            /* display: inline; */
+        }
+
+        .rect{
+            border-radius: 45px;
+            /* border: 3px solid rgb(100, 13, 182); */
+            background-color: #fff;
+            height: 40vh;
+            /* width: 80vw; */
+            margin: 50px;
+            /* padding: 20px; */
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+        }
+        footer{
+            background-color:var(--primary-color);
+            height: 10vh;
+            color: var(--text-color);
+            align-items: center;
+            text-align: center;
+        }
+        .icon img{
+            position: fixed;
+            /* top: 10px; */
+            bottom: 10px;
+            right: 10px;
+            height: 50px;
+            width: 50px;
+            border: 1px solid grey;
+            border-radius: 50%;
+            /* background-color: white; */
+        }
+    </style>
+</head>
+<body>
+    <header><nav>
+        <ul>
+            <li><a href="/">Home </li></a>
+            <li><a href="/">About</li></a>
+            <li><a href="/">Contact</li></a>
+            <li><a href="/">services</li></a>
+        </ul>
+    </nav></header>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"> </div>
+    </div>
+    <div class="rect"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In laudantium delectus dolor sapiente distinctio inventore eveniet aliquam iusto. Dolores quaerat facere placeat. Aliquid, modi optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi explicabo voluptatum esse, odio reprehenderit repudiandae! Et consequuntur cumque, maxime nostrum facere amet in vero doloremque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint maiores laudantium molestias hic quibusdam, laboriosam non optio eum vero possimus iste minima molestiae deserunt! Ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, expedita facilis veniam perspiciatis debitis illum odio ut enim nostrum. Harum similique aperiam optio ipsa consequuntur.</p></div>
+    <div class="icon"><img src="berries.png" alt=""></div>
+    <footer>
+        <p>Copyright @ 2024</p>
+    </footer>
+
+</body>
+</html>
+
+

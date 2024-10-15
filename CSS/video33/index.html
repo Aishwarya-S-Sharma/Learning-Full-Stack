@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        :root{
+            --maincolor:rgb(225, 19, 54);
+            --seccolor:rgb(225, 50, 79);
+            --body:rgb(225, 150, 163);
+            --h1:rgb(107, 31, 31);
+            --td:rgb(49, 16, 16);
+            --defop:0.5;
+            --defpad:10px
+        }
+        body{
+            background-color: var(--body);
+        }
+        h1{
+            text-align: center;
+            color: var(--h1);
+        }
+        .nav{
+            background-color: var(--maincolor);
+        }
+        ul{
+            display: flex;
+        }
+        .nav li:hover{
+            color: #fff;
+            /* border-radius: 10px; */
+            text-decoration: underline ;
+            text-decoration-color: var(--td);
+        }
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            font-size: 25px;
+            margin: 10px;
+            border: 2px solid var(--seccolor);
+            padding: var(--defpad);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+  
+      <div class="container">
+        <h1>Multi color website</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, ex cum
+        velit quod dolor quam odio porro quis sit, voluptatibus totam dolorem?
+        Autem rem quam, suscipit quisquam enim exercitationem cum aut quos
+        repellat eum. Eum ipsa in, officiis ullam corporis possimus qui delectus
+        voluptas sapiente?
+      </div>
+</body>
+</html>

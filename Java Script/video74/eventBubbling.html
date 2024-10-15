@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .child{
+            background-color: aliceblue;
+            border: 1px solid black;
+            padding: 34px;
+            margin: 2px;
+            background-color: orange;
+            cursor: pointer;
+        }
+
+        .childContainer{
+            background-color: lightgray;
+            border: 1px solid black;
+            padding: 44px;
+            background-color: yellowgreen;
+            margin: 4px;
+            cursor: pointer;
+        }
+
+        .container{
+            padding: 54px;
+           background-color: yellow;
+            border: 1px solid black;
+            margin: 20px;
+            cursor: pointer;
+            
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="childContainer">
+        <div class="child">I am a child</div>
+      </section>
+    </div>
+
+    <script>
+      document.querySelector(".child").addEventListener("click", () => {
+        e.stopPropagation();
+        alert("I am a child");
+      });
+
+      document
+        .querySelector(".childContainer")
+        .addEventListener("click", () => {
+        
+          alert("I am a child container");
+        });
+
+      document.querySelector(".container").addEventListener("click", () => {
+        
+        alert("I am a container");
+      });
+    </script>
+  </body>
+</html>
